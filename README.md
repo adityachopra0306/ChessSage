@@ -1,6 +1,11 @@
 # ChessSage: AI-powered Chess Analysis Engine
 
-## Overview
+![status](https://img.shields.io/badge/status-Partially--Deployed-DAA520)
+![frontend](https://img.shields.io/badge/Frontend-React.js-blue)
+![build](https://img.shields.io/badge/Build-Vite-purple)
+![styling](https://img.shields.io/badge/Styling-TailwindCSS-38b2ac)
+![license](https://img.shields.io/badge/license-MIT-brightgreen)
+
 
 This project provides a comprehensive analytics platform for Chess.com users. By entering a Chess.com profile, users receive detailed insights about their playing history, performance trends, and personalized recommendations powered by Stockfish analysis and Gemini NLP summarization.
 
@@ -13,6 +18,13 @@ Website deployed [here](https://chess-sage-neon.vercel.app) through Vercel.
 
 ---
 
+## Tech Stack
+
+- **Frontend**: React.js, Vite, TailwindCSS
+- **Backend** (external): FastAPI, Stockfish, Gemini API
+
+---
+
 ## Features and Program Flow
 
 ### 1. User Profile Input
@@ -22,7 +34,6 @@ Website deployed [here](https://chess-sage-neon.vercel.app) through Vercel.
 - Gemini answer customization:
   - Tone
   - Answer length
-- If no custom key is provided, a random key is used.
 
 ---
 
@@ -84,54 +95,52 @@ Focuses on the user’s last 10 losses:
     - Reasons for errors
   - Opening details and accuracy
   - Time-per-move analysis
-  - Mistake/blunder count by game phase (opening, middlegame, endgame)
+  - Mistake/blunder counts by game phase (opening, middlegame, endgame)
 - Mistakes per phase
 - Gemini API produces summaries for individual losses and patterns across all losses.
 
 ---
 
-## System Architecture
-
-- **Frontend**
-  - User input forms
-  - Data visualization (charts, heatmaps, eval graphs)
-  - Interactive exploration of stats
-- **Backend**
-  - Chess.com API integration
-  - Stockfish integration for analysis
-  - Gemini NLP API for summaries
-  - Data processing and storage
-- **Analytics**
-  - Win/loss pattern detection
-  - Opening-specific performance trends
-  - Blunder heatmaps
-  - Evaluation progression
-
----
-
 ## Requirements
 
-- Python 3.8+
-- Stockfish engine (configurable depth)
-- Access to Gemini NLP API (custom or default keys)
-- Libraries:
-  - React.js + Vite + TailwindCSS (Frontend)
-  - requests (for Chess.com API)
-  - stockfish, python-chess (for engine analysis)
-  - pandas, numpy (for data processing)
-  - fastapi (Backend)
+To run this frontend locally, you need:
+
+- **Node.js** (version 18 or higher recommended)
+- **npm** or **yarn** package manager
+
+### Key Technologies Used
+
+- **React.js** – Frontend framework
+- **Vite** – Development bundler and build tool
+- **TailwindCSS** – Utility-first CSS framework
+- **Axios** – For making API requests to the backend
+- **Recharts** – For visualizing analytics
 
 ---
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/adityachopra0306/ChessSage.git
+cd ChessSage
+
+# Install dependencies
+npm install
+
+# Run the dev server
+npm run dev
+```
 
 ## Planned Features
 
 - Opening-specific win/loss progression over time
 - Additional NLP-powered coaching recommendations
-- Multi-user support with account management
+- User Auth and Account Management
 - Cloud-based analysis queues for large-scale analysis
 
 ---
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [License File](./LICENSE) for details.
