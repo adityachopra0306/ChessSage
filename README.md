@@ -8,7 +8,7 @@ This project provides a comprehensive analytics platform for Chess.com users. By
 
 ## Status
 Website deployed [here](https://chess-sage-neon.vercel.app) through Vercel.
-> **Note:** The backend is currently under deployment.  
+> **Note:** The backend is currently under deployment, see [ChessSage-Backend GitHub](https://github.com/adityachopra0306/ChessSage-backend).  
 > However, the repository contains a [Jupyter notebook](notebook/backend.ipynb) with the working backend code, demonstrating the entire analysis pipeline.
 
 ---
